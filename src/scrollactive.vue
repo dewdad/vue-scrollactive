@@ -427,7 +427,7 @@
         const { hash } = window.location;
         if (!hash) return;
 
-        const hashElement = document.querySelector(decodeURI(hash));
+        const hashElement = document.getElementById(decodeURI(hash));
         if (!hashElement) return;
 
         window.location.hash = ''; // Clears the hash to prevent scroll from jumping
